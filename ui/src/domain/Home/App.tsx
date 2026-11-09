@@ -316,7 +316,7 @@ const router = createBrowserRouter(
           element: <OrganizationsProjectsRoute />,
         },
         {
-          path: "/organizations/:orgid/projects/:id",
+          path: "/organizations/:orgid/projects/:id/:section?",
           element: <OrganizationsProjectDetailRoute />,
         },
         {
