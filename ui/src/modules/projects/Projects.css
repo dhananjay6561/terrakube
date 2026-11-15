@@ -249,21 +249,6 @@
   margin-bottom: 0;
 }
 
-.project-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 16px;
-}
-
-.project-chips .project-chip.ant-tag {
-  margin: 0;
-  padding: 2px 12px;
-  border: 1px solid var(--tk-border-secondary, #d9d9d9);
-  border-radius: 14px;
-  font-size: 13px;
-}
-
 .projects-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -312,44 +297,6 @@
   gap: 8px;
   font-size: 12px;
   color: var(--tk-text-secondary, #8c8c8c);
-}
-
-.project-badge {
-  flex-shrink: 0;
-  padding: 1px 8px;
-  border-radius: 10px;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.project-badge-danger,
-.project-pill-danger {
-  color: var(--ant-color-error, #cf1322);
-  background: var(--ant-color-error-bg, #fff1f0);
-}
-
-.project-badge-warning,
-.project-pill-warning {
-  color: var(--ant-color-warning-text, #ad6800);
-  background: var(--ant-color-warning-bg, #fffbe6);
-}
-
-.project-pill-success {
-  color: var(--ant-color-success-text, #237804);
-  background: var(--ant-color-success-bg, #f6ffed);
-}
-
-.project-pill-neutral {
-  color: var(--tk-text-secondary, #595959);
-  background: var(--tk-bg-layout, #f0f0f0);
-}
-
-.project-pill {
-  display: inline-block;
-  padding: 0 8px;
-  border-radius: 10px;
-  font-size: 12px;
-  font-weight: 500;
 }
 
 .project-unassigned-row td {
@@ -475,11 +422,6 @@ a.project-badge,
   text-decoration: none;
 }
 
-a.project-badge:hover {
-  filter: brightness(0.95);
-  text-decoration: underline;
-}
-
 .project-name-description {
   max-width: 320px;
   overflow: hidden;
@@ -547,4 +489,42 @@ a.project-badge:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: transparent;
   color: rgba(255, 255, 255, 0.55);
+}
+
+/* The project lists wear the look of the workspace list: a bordered table with a quiet uppercase header. */
+.projects-table .ant-table {
+  border: 1px solid var(--tk-border-primary);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.projects-table .ant-table-thead > tr > th {
+  background: var(--tk-fill-secondary);
+  border-bottom: 1px solid var(--tk-border-primary);
+  color: var(--tk-text-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.projects-table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid var(--tk-border-secondary);
+}
+
+.projects-table .ant-table-tbody > tr:hover > td {
+  background: var(--tk-fill-secondary);
+}
+
+.projects-table .project-name-cell a,
+.project-card-name {
+  color: var(--tk-text-primary);
+}
+
+.project-card-badge-link {
+  flex-shrink: 0;
+}
+
+.project-chips {
+  margin-bottom: 16px;
 }
