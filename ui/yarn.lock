@@ -567,6 +567,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.23.8":
+  version: 7.29.14
+  resolution: "@babel/runtime@npm:7.29.14"
+  checksum: 10c0/dd809ac74c2154a549c9a9fbe73a3da84927c987d1291a1f1618f9263fa372a0de0d575c2616b3b420586a9974114c81ee47953c5d25074da66b58bf9d33d870
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^8.0.0":
   version: 8.0.0
   resolution: "@babel/runtime@npm:8.0.0"
@@ -5253,6 +5260,7 @@ __metadata:
     jest-environment-jsdom: "npm:^30.5.2"
     jest-transformer-svg: "npm:^2.1.0"
     luxon: "npm:^3.7.2"
+    match-sorter: "npm:^8.3.1"
     minimatch: "npm:^11.0.4"
     monaco-editor: "npm:^0.57.0"
     oidc-client-ts: "npm:3.5.0"
@@ -5272,6 +5280,7 @@ __metadata:
     remark-gfm: "npm:4.0.1"
     rollup-plugin-visualizer: "npm:^7.1.1"
     sucrase: "npm:^3.35.1"
+    tinykeys: "npm:^4.0.1"
     ts-jest: "npm:^29.4.15"
     ts-node: "npm:^10.9.2"
     typescript: "npm:^6.0.3"
@@ -9594,6 +9603,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"match-sorter@npm:^8.3.1":
+  version: 8.3.1
+  resolution: "match-sorter@npm:8.3.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.23.8"
+    remove-accents: "npm:0.5.0"
+  checksum: 10c0/84e14b5af45b3da4e599bfab7ff63f46bcf80dd8be98ffda5439d9be8787511f8e49665e424c248e7392cef98bd976b2b4dc2e6d089735359e33d5c1e2bec02c
+  languageName: node
+  linkType: hard
+
 "math-intrinsics@npm:^1.1.0":
   version: 1.1.0
   resolution: "math-intrinsics@npm:1.1.0"
@@ -11359,6 +11378,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"remove-accents@npm:0.5.0":
+  version: 0.5.0
+  resolution: "remove-accents@npm:0.5.0"
+  checksum: 10c0/a75321aa1b53d9abe82637115a492770bfe42bb38ed258be748bf6795871202bc8b4badff22013494a7029f5a241057ad8d3f72adf67884dbe15a9e37e87adc4
+  languageName: node
+  linkType: hard
+
 "require-directory@npm:^2.1.1":
   version: 2.1.1
   resolution: "require-directory@npm:2.1.1"
@@ -12250,6 +12276,13 @@ __metadata:
     fdir: "npm:^6.5.0"
     picomatch: "npm:^4.0.4"
   checksum: 10c0/7f7bb0f197c88bc4b20c231e0deca4240ca3bf313a88f5a7fee93a872b84966a4d50220947c0455ad07a60b3b360961c5b7fd979222aeb716a9f99b412002e4c
+  languageName: node
+  linkType: hard
+
+"tinykeys@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "tinykeys@npm:4.0.1"
+  checksum: 10c0/2caa00b78b1ff222fd3c0bd921c007491a472188dad309499fc87b984a721e121caa6fcb1c2f8a613434f7b4fe46369919e88a42a7c4f43051d7cc161f2ea3aa
   languageName: node
   linkType: hard
 
